@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, sans-serif;
+    font-size: 0.8rem;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 10%);
+    height: 10vh;
+    width: 100vw;
+}
+
+header img {
+    height: 90%
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lista-menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-right: 100px;
+}
+
+.lista-menu a {
+    color: rgb(155, 0, 0);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.wrapper-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    background-image: url("https://senoticias.com.br/se/wp-content/uploads/2015/12/Aracaju-1024x583.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 10vh;
+    height: 90vh;
+}
+
+.wrapper-home p {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 2px 2px rgba(68, 61, 61, 0.692);
+
+    width: 80vw;
+}
+
+.menu-catalogo {
+    text-align: center;
+    font-size: 1.5rem;
+    height: 10vh;
+}
+
+.wrapper-catalogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    height: 90vh;
+    background-color: #fff;
+    box-shadow: 0 2px 0 0 rgb(0 0 0 / 10%);
+}
+
+.wrapper-galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+
+    font-weight: 600;
+    font-size: 5rem;
+    color: salmon;
+}
+
+.wrapper-galeria img {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 0 0 2px rgb(0 0 0 / 10%);
+    height: 5vh;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.lista-de-produtos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.produto {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 300px;
+    max-height: 300px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(65, 51, 51, 0.137);
+    box-shadow: 2px 2px 2px 0 rgba(77, 63, 63, 0.9);
+    border-radius: 5px;
+}
+
+.imagem-produto {
+    display: flex;
+    justify-content: center;
+    height: 130px;
+}
+
+.imagem-produto > img {
+    height: 98%;
+    width: 98%;
+}
+
+.detalhes-produto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 150px;
+    border-top: 1px solid black;
+}
+
+.detalhes-produto > strong {
+    text-align: center;
+}
+
+.detalhes-produto > span {
+    color: green;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.detalhes-produto > p {
+    margin: 0;
+    overflow-y: auto;
+    max-height: 90px;
+}
+
+.quantidade-produto {
+    display: flex;
+    justify-content: space-around;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.quantidade-produto > input {
+    width: 30%;
+}
+
+table {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 500px;
+}
+
+th,td {
+    text-align: start;
+}
+
+td img {
+    height: 50px;
+}
+
+td strong {
+    font-size: 1.2rem;
+}
+
+.contato {
+    text-decoration: none;
+    margin-top: 10px;
+    width: 70px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
