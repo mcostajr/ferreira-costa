@@ -2,8 +2,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
     font-family: Verdana, sans-serif;
     font-size: 0.8rem;
 }
@@ -14,7 +12,8 @@ header {
     align-items: center;
     background: #fff;
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 10%);
-    height: 10vh;
+    top: 0;
+    height: 60px;
     width: 100vw;
 }
 
@@ -44,73 +43,34 @@ header img {
 
 .wrapper-home {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: static;
     background-image: url("https://senoticias.com.br/se/wp-content/uploads/2015/12/Aracaju-1024x583.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    margin-top: 10vh;
-    height: 90vh;
+    margin-top: 60px;
+    height: 94vh;
 }
 
 .wrapper-home p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 3rem;
     font-weight: 600;
     color: #fff;
     text-shadow: 2px 2px rgba(68, 61, 61, 0.692);
 
     width: 80vw;
-}
-
-.menu-catalogo {
-    text-align: center;
-    font-size: 1.5rem;
-    height: 10vh;
+    height: 80%;
+    overflow: auto;
 }
 
 .wrapper-catalogo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    height: 90vh;
-    background-color: #fff;
+    text-align: center;
     box-shadow: 0 2px 0 0 rgb(0 0 0 / 10%);
-}
-
-.wrapper-galeria {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 85vh;
-
-    font-weight: 600;
-    font-size: 5rem;
-    color: salmon;
-}
-
-.wrapper-galeria img {
-    max-height: 300px;
-    max-width: 300px;
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 2px 0 0 2px rgb(0 0 0 / 10%);
-    height: 5vh;
-}
-
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
 }
 
 .lista-de-produtos {
@@ -179,6 +139,14 @@ form {
     width: 30%;
 }
 
+.carrinho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
 table {
     border: 1px solid black;
     border-radius: 5px;
@@ -197,10 +165,33 @@ td strong {
     font-size: 1.2rem;
 }
 
+.wrapper-galeria {
+    text-align: center;
+    font-weight: 600;
+    font-size: 5rem;
+    color: salmon;
+}
+
+.wrapper-galeria img {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+footer {
+    height: 40px;
+    text-align: center;
+    box-shadow: 2px 0 0 2px rgb(0 0 0 / 10%);
+}
+
 .contato {
     text-decoration: none;
     margin-top: 10px;
-    width: 70px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
 }
 
 .formulario {

@@ -167,8 +167,8 @@ function adicionarCarrinho(pedido = {}) {
         `
 
     if(carrinho.length > 0) {
-        document.querySelector('.carrinho').style.display = 'block'
+        document.querySelector('.carrinho').style.visibility = 'visible'
     } else {
-        document.querySelector('.carrinho').style.display = 'none'
+        document.querySelector('.carrinho').style.visibility = 'hidden'
     }
 }
