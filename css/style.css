@@ -73,6 +73,17 @@ header img {
     box-shadow: 0 2px 0 0 rgb(0 0 0 / 10%);
 }
 
+.wrapper-catalogo > h3 { 
+    font-weight: 600;
+    font-size: 5rem;
+    color: salmon;
+}
+
+.cep {
+    display: inline-block;
+    margin-top: 50px;
+}
+
 .lista-de-produtos {
     display: flex;
     justify-content: center;
